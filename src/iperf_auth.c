@@ -300,7 +300,7 @@ ssize_t iperf_getpass (char **lineptr, size_t *n, FILE *stream) {
 
     /* Read the password. */
     printf("Password: ");
-    nread = getline (lineptr, n, stream);
+    /*nread = getline (lineptr, n, stream);*/
 
     /* Restore terminal. */
     (void) tcsetattr (fileno (stream), TCSAFLUSH, &old);

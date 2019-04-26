@@ -204,8 +204,8 @@ CJSON_PUBLIC(void) cJSON_Delete(cJSON *item)
 /* get the decimal point character of the current locale */
 static unsigned char get_decimal_point(void)
 {
-    struct lconv *lconv = localeconv();
-    return (unsigned char) lconv->decimal_point[0];
+    /*struct lconv *lconv = localeconv();*/
+    return (unsigned char) '0';//lconv->decimal_point[0];
 }
 
 typedef struct
