@@ -28,5 +28,5 @@ LOCAL_SRC_FILES := \
 
 LOCAL_SHARED_LIBRARIES := libssl libcrypto
 
-LOCAL_MODULE := iperf
+LOCAL_MODULE := iperf3
 include $(BUILD_EXECUTABLE)
