@@ -5,6 +5,7 @@ LOCAL_MODULE_TAGS := eng
 LOCAL_C_INCLUDES := $(LOCAL_PATH) \
 	external/openssl/include
 
+LOCAL_CFLAGS := -DSO_MAX_PACING_RATE=0x2f
 LOCAL_SRC_FILES := \
 	src/cjson.c \
 	src/iperf_api.c \
