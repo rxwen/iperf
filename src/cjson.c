@@ -479,7 +479,7 @@ static cJSON_bool print_number(const cJSON * const item, printbuffer * const out
     {
         if (number_buffer[i] == decimal_point)
         {
-            output_pointer[i] = '.';
+            output_pointer[i] = '0';
             continue;
         }
 
